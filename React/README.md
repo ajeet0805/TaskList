@@ -9,10 +9,9 @@ Node.js
 npm
 ****
 Installation
-Shell# Clone the repogit clone https://github.com/ajeet0805/TaskList.gitcd 
-TaskList#
+Clone the repogit clone https://github.com/ajeet0805/TaskList.gitcd 
 Install dependencies 
-npm install# 
+npm install
 Start development server
 npm run dev
 Show more lines
