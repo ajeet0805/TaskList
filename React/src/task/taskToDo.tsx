@@ -12,6 +12,7 @@ import useDebounce from "../hooks/useDebounce";
 const TaskToDo = () => {
 const [displayTask, setDisplayTask] = useState<Task[]>([]);
 const [filterTask, setFilterTask] = useState<Task[]>([]);
+const [delTask,setDelTask]= useState<string>('');
   const [searchTitle, setSearchTitle] = useState<string>('')
   const initialValues: Task = {
     id: '',
@@ -65,7 +66,7 @@ const [filterTask, setFilterTask] = useState<Task[]>([]);
     if (!searchText) return indexed;    
     return indexed.filter(t => t.title.includes(searchText));
   }, [indexed, deferredQuery]);
-   console.log(filtered);
+   
   useEffect(()=>{   
     if(deferredQuery.trim().length > 0){
        setDisplayTask(filtered);      
@@ -75,17 +76,15 @@ const [filterTask, setFilterTask] = useState<Task[]>([]);
      
   },[deferredQuery ])
   /*---------------------------end the Custome hooks------------------------------*/
-  // const res = useDebounce(searchTitle);
-  // console.log(res);
+
   
   useEffect(() => {
     GetTaskList()
-  }, []);
+  }, [delTask]);
 
   const GetTaskList = async () => {
     try {
-      const response = await api.get('/taskList');
-      const r = await api.delete('/taskList/1');
+      const response = await api.get('/taskList');     
       setDisplayTask(response.data);
     } catch (error) {
       console.log(error);
@@ -94,6 +93,15 @@ const [filterTask, setFilterTask] = useState<Task[]>([]);
   const handleChanged = (e: any) => {
     setSearchTitle(e.target.value);
 
+  }
+  const deleteHandler=async(id:string)=>{
+    try{
+     const result = await api.delete(`/TaskList/${id}`);    
+     setDelTask(result?.data?.message);    
+    }catch(error){
+      console.log(error);
+    }
+    
   }
   const { handleSubmit, handleChange, errors, touched, values } = todoFormik;
   return (
@@ -157,7 +165,7 @@ const [filterTask, setFilterTask] = useState<Task[]>([]);
       <TaskTblHeader />
       {displayTask.length > 0 ? '' : <ErrorMsg />}
       {displayTask && displayTask.length > 0 && displayTask.map((item: Task, index: number) => {
-        return (<TaskTblRow {...item} key={`${index}${item.description}`} index={index} />)
+        return (<TaskTblRow {...item} index={index} onRowClick={deleteHandler} key={`${index}${item.description}`}/>)
       })}
 
     </Container>
