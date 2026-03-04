@@ -9,8 +9,8 @@ Close code from https://github.com/ajeet0805/TaskList.git
   npm 
 ---------------------------------------------------------
    ReactJS
-step2: npm install 
-stpe:3 npm run dev
+step-1: npm install 
+step-2: npm run dev
 -----------------------------------------------------
 **Node:
 step-1:Npm instal
