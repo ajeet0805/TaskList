@@ -1,17 +1,28 @@
+Clone the repo
+
+git clone https://github.com/ajeet0805/TaskList.git
+
+cd TaskList
+
+
 There are two Repo:
 
  React->React + TypeScript (frontend)
  
  NodeJS->Node.js + Express + TypeScript (backend)
- 
- Software Required
-
- Node.js
-
- 
+  
 Frontend Setup (React)
 
 cd React :
+
+Install dependencies
+npm install
+
+Start development server
+npm run dev
+
+React app will run on:
+http://localhost:5173/
 
 NodeJS Setup :
 
