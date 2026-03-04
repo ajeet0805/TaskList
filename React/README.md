@@ -1,12 +1,20 @@
 There are two Repo:
+
  React->React + TypeScript (frontend)
+ 
  NoeJS->Node.js + Express + TypeScript (backend)
  
-🚀 Frontend Setup (React)
-Software Required
+ Software Required
 
-Node.js
-npm
+ Node.js
+
+ 
+Frontend Setup (React)
+Cd React :
+
+NodeJS Setup :
+
+cd NodeJS 
 ****
 Clone the repo
 git clone https://github.com/ajeet0805/TaskList.git
