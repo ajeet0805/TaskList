@@ -1,13 +1,17 @@
 There are two Repo:
  React->React + TypeScript (frontend)
  NoeJS->Node.js + Express + TypeScript (backend)
+🚀 Frontend Setup (React)
+Software Required
 
-Follow the step for React Application:
-Close code from https://github.com/ajeet0805/TaskList.git
-1. Softeare required:
-  Nodejs
-  npm 
----------------------------------------------------------
+Node.js
+npm
+
+Installation
+Shell# Clone the repogit clone https://github.com/ajeet0805/TaskList.gitcd TaskList# Install dependenciesnpm install# Start development servernpm run devShow more lines
+React app will run on:
+http://localhost:5173/
+----------------------------------------
    ReactJS
 step-1: npm install 
 step-2: npm run dev
