@@ -13,10 +13,10 @@ git clone https://github.com/ajeet0805/TaskList.git
 
 cd TaskList
 
-Install dependencies
+Install dependencies:
 npm install
 
-Start development server
+Start development server:
 npm run dev
 
 React app will run on:
