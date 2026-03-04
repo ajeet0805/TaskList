@@ -7,7 +7,7 @@ Software Required
 
 Node.js
 npm
-**
+****
 Installation
 Shell# Clone the repogit clone https://github.com/ajeet0805/TaskList.gitcd 
 TaskList#
@@ -17,7 +17,8 @@ Start development server
 npm run dev
 Show more lines
 React app will run on:
-http://localhost:5173/**
+http://localhost:5173/
+
 ----------------------------------------
    ReactJS
 step-1: npm install 
