@@ -1,7 +1,4 @@
-# React + TypeScript + Vite
-
-# React + TypeScript + Vite
-
+# NODEJS + Express + TypeScript
 TaskList – Full Stack Application 
 This project contains two repositories: 
 ----------------------------------------------------------------------------
