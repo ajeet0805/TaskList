@@ -2,7 +2,7 @@ There are two Repo:
 
  React->React + TypeScript (frontend)
  
- NoeJS->Node.js + Express + TypeScript (backend)
+ NodeJS->Node.js + Express + TypeScript (backend)
  
  Software Required
 
@@ -10,7 +10,8 @@ There are two Repo:
 
  
 Frontend Setup (React)
-Cd React :
+
+cd React :
 
 NodeJS Setup :
 
@@ -30,6 +31,13 @@ npm run dev
 React app will run on:
 http://localhost:5173/
 -----------------------------------------------------
-**Node:
+
+NODEJS Server Start
+
+
 step-1:Npm instal
-stpe-2:npx ts-node server.ts**
+
+stpe-2:npx ts-node server.ts
+
+NodeJS app will run on:
+http://localhost:300/
